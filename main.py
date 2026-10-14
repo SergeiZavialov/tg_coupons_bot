@@ -123,7 +123,10 @@ async def add_coupon(message: Message, bot: Bot) -> None:
     try:
         await bot.send_message(
             COUPON_USER_ID,
-            f"Вам выдан новый купон!\nТекущий баланс: {count}",
+            "В Н И М А Н И Е\n"
+            "❗️Вам начислен +1 купон ❗️\n"
+            "\n"
+            "Искренне благодарим Вас , за ваш огромный вклад в семейное дело",
             reply_markup=user_keyboard(),
         )
     except Exception:

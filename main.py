@@ -60,7 +60,7 @@ def _save_count(count: int) -> None:
 
 def manager_keyboard() -> ReplyKeyboardMarkup:
     return ReplyKeyboardMarkup(
-        keyboard=[[KeyboardButton(text=BTN_ADD)]],
+        keyboard=[[KeyboardButton(text=BTN_ADD), KeyboardButton(text=BTN_BALANCE)]],
         resize_keyboard=True,
     )
 
